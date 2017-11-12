@@ -8,22 +8,22 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>几种距离计算公式在数据挖掘中的应用场景分析 | Thinkgamer的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="本文涉及以下几种距离计算公式的分析，参考资料为《面向程序员的数据挖掘指南》  曼哈顿距离 欧几里得距离 闵可夫斯基距离 皮尔逊相关系数 余弦相似度  之前整理过一篇关于距离相关的文章：机器学习算法中的距离和相似性计算公式，分析以及python实现">
-<meta name="keywords" content="数据挖掘,相似度计算,python">
+  <meta name="description" content="本文涉及以下几种距离计算公式的分析，参考资料为《面向程序员的数据挖掘指南》  曼哈顿距离 欧几里得距离 闵可夫斯基距离 皮尔逊相关系数 余弦相似度">
+<meta name="keywords" content="距离计算">
 <meta property="og:type" content="article">
 <meta property="og:title" content="几种距离计算公式在数据挖掘中的应用场景分析">
 <meta property="og:url" content="http://yoursite.com/2017/09/20/机器学习/几种距离计算公式在数据挖掘中的应用场景分析/index.html">
 <meta property="og:site_name" content="Thinkgamer的博客">
-<meta property="og:description" content="本文涉及以下几种距离计算公式的分析，参考资料为《面向程序员的数据挖掘指南》  曼哈顿距离 欧几里得距离 闵可夫斯基距离 皮尔逊相关系数 余弦相似度  之前整理过一篇关于距离相关的文章：机器学习算法中的距离和相似性计算公式，分析以及python实现">
+<meta property="og:description" content="本文涉及以下几种距离计算公式的分析，参考资料为《面向程序员的数据挖掘指南》  曼哈顿距离 欧几里得距离 闵可夫斯基距离 皮尔逊相关系数 余弦相似度">
 <meta property="og:image" content="http://img.blog.csdn.net/20170920102356159?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvR2FtZXJfZ3l0/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
 <meta property="og:image" content="http://img.blog.csdn.net/20170920111425007?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvR2FtZXJfZ3l0/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
 <meta property="og:image" content="http://img.blog.csdn.net/20170920112804525?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvR2FtZXJfZ3l0/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
 <meta property="og:image" content="http://img.blog.csdn.net/20170920114015874?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvR2FtZXJfZ3l0/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
 <meta property="og:image" content="http://img.blog.csdn.net/20170920114326883?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvR2FtZXJfZ3l0/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
-<meta property="og:updated_time" content="2017-11-11T10:38:35.000Z">
+<meta property="og:updated_time" content="2017-11-12T17:15:39.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="几种距离计算公式在数据挖掘中的应用场景分析">
-<meta name="twitter:description" content="本文涉及以下几种距离计算公式的分析，参考资料为《面向程序员的数据挖掘指南》  曼哈顿距离 欧几里得距离 闵可夫斯基距离 皮尔逊相关系数 余弦相似度  之前整理过一篇关于距离相关的文章：机器学习算法中的距离和相似性计算公式，分析以及python实现">
+<meta name="twitter:description" content="本文涉及以下几种距离计算公式的分析，参考资料为《面向程序员的数据挖掘指南》  曼哈顿距离 欧几里得距离 闵可夫斯基距离 皮尔逊相关系数 余弦相似度">
 <meta name="twitter:image" content="http://img.blog.csdn.net/20170920102356159?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvR2FtZXJfZ3l0/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
   
     <link rel="alternative" href="/atom.xml" title="Thinkgamer的博客" type="application/atom+xml">
@@ -67,11 +67,11 @@
 			
 				<li><a href="/">主页</a></li>
 	        
-				<li><a href="/categories/技术篇">技术 - 篇</a></li>
+				<li><a href="/categories/技术篇/">技术 - 篇</a></li>
 	        
-				<li><a href="/categories/随手记">随手 - 记</a></li>
+				<li><a href="/categories/随手记/">随手 - 记</a></li>
 	        
-				<li><a href="/categories/夏未眠">夏未眠</a></li>
+				<li><a href="/categories/夏未眠/">夏未眠</a></li>
 	        
 			</ul>
 		</nav>
@@ -161,11 +161,11 @@
 				
 					<li style="width: 25%"><a href="/">主页</a></li>
 		        
-					<li style="width: 25%"><a href="/categories/技术篇">技术 - 篇</a></li>
+					<li style="width: 25%"><a href="/categories/技术篇/">技术 - 篇</a></li>
 		        
-					<li style="width: 25%"><a href="/categories/随手记">随手 - 记</a></li>
+					<li style="width: 25%"><a href="/categories/随手记/">随手 - 记</a></li>
 		        
-					<li style="width: 25%"><a href="/categories/夏未眠">夏未眠</a></li>
+					<li style="width: 25%"><a href="/categories/夏未眠/">夏未眠</a></li>
 		        
 				</ul>
 			</nav>
@@ -208,8 +208,8 @@
 <li>皮尔逊相关系数</li>
 <li>余弦相似度</li>
 </ul>
-<p>之前整理过一篇关于距离相关的文章：<a href="">机器学习算法中的距离和相似性计算公式，分析以及python实现</a></p>
 <a id="more"></a>
+<p>之前整理过一篇关于距离相关的文章：<a href="">机器学习算法中的距离和相似性计算公式，分析以及python实现</a></p>
 <h1 id="闵可夫斯基距离"><a href="#闵可夫斯基距离" class="headerlink" title="闵可夫斯基距离"></a>闵可夫斯基距离</h1><p>两个n维变量a(x11,x12,…,x1n)与 b(x21,x22,…,x2n)间的闵可夫斯基距离定义为：</p>
 <script type="math/tex; mode=display">\sqrt[p]{ \sum_{k=1}^{n} \left | x_{1k}-x_{2k} \right |^p}</script><p>其中p是一个变参数。</p>
 <p>当p=1时，就是曼哈顿距离</p>
@@ -289,15 +289,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">数据挖掘</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">相似度计算</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">python</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">距离计算</a>
         		</li>
       		
 		</ul>
@@ -435,7 +427,7 @@
     		&copy; 2017 Thinkgamer
     	</div>
       	<div class="footer-right">
-      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      		<a href="http://blog.csdn.net/gamer_gyt" target="_blank">Blog</a>  Published By <a href="https://github.com/Thinkgamer" target="_blank">Thinkgamer</a>  
       	</div>
     </div>
   </div>
@@ -536,23 +528,15 @@ MathJax.Hub.Queue(function() {
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">数据结构</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">夏未眠</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">青春</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">数据挖掘</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">相似度计算</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">python</a>
+                <a href="javascript:void(0)" class="js-tag color5">距离计算</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -564,27 +548,7 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">pandas</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">交叉验证</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">正态分布</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">T检验</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">二元线性回归</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">多元线性回归</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -592,15 +556,7 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">总结</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">周星驰</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">大话西游</a>
+                <a href="javascript:void(0)" class="js-tag color4">随手记</a>
               </li>
             
             <div class="clearfix"></div>

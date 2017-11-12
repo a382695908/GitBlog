@@ -8,17 +8,17 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>数据归一化和其在sklearn中的处理 | Thinkgamer的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="一：数据归一化数据归一化（标准化）处理是数据挖掘的一项基础工作，不同评价指标往往具有不同的量纲和量纲单位，这样的情况会影响到数据分析的结果，为了消除指标之间的量纲影响，需要进行数据标准化处理，以解决数据指标之间的可比性。原始数据经过数据标准化处理后，各指标处于同一数量级，适合进行综合对比评价。 归一化方法有两种形式，一种是把数变为（0，1）之间的小数，一种是把有量纲表达式变为无量纲表达式。在机器学">
+  <meta name="description" content="一：数据归一化数据归一化（标准化）处理是数据挖掘的一项基础工作，不同评价指标往往具有不同的量纲和量纲单位，这样的情况会影响到数据分析的结果，为了消除指标之间的量纲影响，需要进行数据标准化处理，以解决数据指标之间的可比性。原始数据经过数据标准化处理后，各指标处于同一数量级，适合进行综合对比评价。">
 <meta name="keywords" content="sklearn,数据归一化">
 <meta property="og:type" content="article">
 <meta property="og:title" content="数据归一化和其在sklearn中的处理">
 <meta property="og:url" content="http://yoursite.com/2017/09/01/机器学习/数据归一化和其在sklearn中的处理/index.html">
 <meta property="og:site_name" content="Thinkgamer的博客">
-<meta property="og:description" content="一：数据归一化数据归一化（标准化）处理是数据挖掘的一项基础工作，不同评价指标往往具有不同的量纲和量纲单位，这样的情况会影响到数据分析的结果，为了消除指标之间的量纲影响，需要进行数据标准化处理，以解决数据指标之间的可比性。原始数据经过数据标准化处理后，各指标处于同一数量级，适合进行综合对比评价。 归一化方法有两种形式，一种是把数变为（0，1）之间的小数，一种是把有量纲表达式变为无量纲表达式。在机器学">
-<meta property="og:updated_time" content="2017-11-11T10:44:57.000Z">
+<meta property="og:description" content="一：数据归一化数据归一化（标准化）处理是数据挖掘的一项基础工作，不同评价指标往往具有不同的量纲和量纲单位，这样的情况会影响到数据分析的结果，为了消除指标之间的量纲影响，需要进行数据标准化处理，以解决数据指标之间的可比性。原始数据经过数据标准化处理后，各指标处于同一数量级，适合进行综合对比评价。">
+<meta property="og:updated_time" content="2017-11-12T17:06:31.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="数据归一化和其在sklearn中的处理">
-<meta name="twitter:description" content="一：数据归一化数据归一化（标准化）处理是数据挖掘的一项基础工作，不同评价指标往往具有不同的量纲和量纲单位，这样的情况会影响到数据分析的结果，为了消除指标之间的量纲影响，需要进行数据标准化处理，以解决数据指标之间的可比性。原始数据经过数据标准化处理后，各指标处于同一数量级，适合进行综合对比评价。 归一化方法有两种形式，一种是把数变为（0，1）之间的小数，一种是把有量纲表达式变为无量纲表达式。在机器学">
+<meta name="twitter:description" content="一：数据归一化数据归一化（标准化）处理是数据挖掘的一项基础工作，不同评价指标往往具有不同的量纲和量纲单位，这样的情况会影响到数据分析的结果，为了消除指标之间的量纲影响，需要进行数据标准化处理，以解决数据指标之间的可比性。原始数据经过数据标准化处理后，各指标处于同一数量级，适合进行综合对比评价。">
   
     <link rel="alternative" href="/atom.xml" title="Thinkgamer的博客" type="application/atom+xml">
   
@@ -61,11 +61,11 @@
 			
 				<li><a href="/">主页</a></li>
 	        
-				<li><a href="/categories/技术篇">技术 - 篇</a></li>
+				<li><a href="/categories/技术篇/">技术 - 篇</a></li>
 	        
-				<li><a href="/categories/随手记">随手 - 记</a></li>
+				<li><a href="/categories/随手记/">随手 - 记</a></li>
 	        
-				<li><a href="/categories/夏未眠">夏未眠</a></li>
+				<li><a href="/categories/夏未眠/">夏未眠</a></li>
 	        
 			</ul>
 		</nav>
@@ -155,11 +155,11 @@
 				
 					<li style="width: 25%"><a href="/">主页</a></li>
 		        
-					<li style="width: 25%"><a href="/categories/技术篇">技术 - 篇</a></li>
+					<li style="width: 25%"><a href="/categories/技术篇/">技术 - 篇</a></li>
 		        
-					<li style="width: 25%"><a href="/categories/随手记">随手 - 记</a></li>
+					<li style="width: 25%"><a href="/categories/随手记/">随手 - 记</a></li>
 		        
-					<li style="width: 25%"><a href="/categories/夏未眠">夏未眠</a></li>
+					<li style="width: 25%"><a href="/categories/夏未眠/">夏未眠</a></li>
 		        
 				</ul>
 			</nav>
@@ -194,8 +194,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="一：数据归一化"><a href="#一：数据归一化" class="headerlink" title="一：数据归一化"></a>一：数据归一化</h1><p>数据归一化（标准化）处理是数据挖掘的一项基础工作，不同评价指标往往具有不同的量纲和量纲单位，这样的情况会影响到数据分析的结果，为了消除指标之间的量纲影响，需要进行数据标准化处理，以解决数据指标之间的可比性。原始数据经过数据标准化处理后，各指标处于同一数量级，适合进行综合对比评价。</p>
-<p>归一化方法有两种形式，一种是把数变为（0，1）之间的小数，一种是把有量纲表达式变为无量纲表达式。在机器学习中我们更关注的把数据变到0～1之间，接下来我们讨论的也是第一种形式。<br><a id="more"></a></p>
+        <h1 id="一：数据归一化"><a href="#一：数据归一化" class="headerlink" title="一：数据归一化"></a>一：数据归一化</h1><p>数据归一化（标准化）处理是数据挖掘的一项基础工作，不同评价指标往往具有不同的量纲和量纲单位，这样的情况会影响到数据分析的结果，为了消除指标之间的量纲影响，需要进行数据标准化处理，以解决数据指标之间的可比性。原始数据经过数据标准化处理后，各指标处于同一数量级，适合进行综合对比评价。<br><a id="more"></a><br>归一化方法有两种形式，一种是把数变为（0，1）之间的小数，一种是把有量纲表达式变为无量纲表达式。在机器学习中我们更关注的把数据变到0～1之间，接下来我们讨论的也是第一种形式。</p>
 <h2 id="1）min-max标准化"><a href="#1）min-max标准化" class="headerlink" title="1）min-max标准化"></a>1）min-max标准化</h2><p>min-max标准化也叫做离差标准化，是对原始数据的线性变换，使结果落到[0,1]区间，其对应的数学公式如下：</p>
 <script type="math/tex; mode=display">
 X_{scale} = \frac{x-min}{max-min}</script><p>对应的python实现为<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># x为数据 比如说 [1,2,1,3,2,4,1]</span><br><span class="line">def Normalization(x):</span><br><span class="line">    return [(float(i)-min(x))/float(max(x)-min(x)) for i in x]</span><br></pre></td></tr></table></figure></p>
@@ -440,7 +439,7 @@ X_{scale} = \frac{x-x_{center} }{\sigma_{1} }</script><p>中位数是指将所�
     		&copy; 2017 Thinkgamer
     	</div>
       	<div class="footer-right">
-      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      		<a href="http://blog.csdn.net/gamer_gyt" target="_blank">Blog</a>  Published By <a href="https://github.com/Thinkgamer" target="_blank">Thinkgamer</a>  
       	</div>
     </div>
   </div>
@@ -541,23 +540,15 @@ MathJax.Hub.Queue(function() {
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">数据结构</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">夏未眠</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">青春</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">数据挖掘</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">相似度计算</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">python</a>
+                <a href="javascript:void(0)" class="js-tag color5">距离计算</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -569,27 +560,7 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">pandas</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">交叉验证</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">正态分布</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">T检验</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">二元线性回归</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">多元线性回归</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -597,15 +568,7 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">总结</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">周星驰</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">大话西游</a>
+                <a href="javascript:void(0)" class="js-tag color4">随手记</a>
               </li>
             
             <div class="clearfix"></div>

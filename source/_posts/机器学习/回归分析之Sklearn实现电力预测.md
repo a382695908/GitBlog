@@ -1,7 +1,7 @@
 ---
 title: 回归分析之Sklearn实现电力预测
 date: 2017-11-07 13:39:15
-tags: [回归分析,sklearn,pandas,交叉验证]
+tags: [回归分析,sklearn]
 categories: 技术篇
 ---
 

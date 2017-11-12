@@ -9,14 +9,14 @@
   <title>回归分析之Sklearn实现电力预测 | Thinkgamer的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="参考原文：http://www.cnblogs.com/pinard/p/6016029.html这里进行了手动实现，增强记忆。">
-<meta name="keywords" content="回归分析,sklearn,pandas,交叉验证">
+<meta name="keywords" content="回归分析,sklearn">
 <meta property="og:type" content="article">
 <meta property="og:title" content="回归分析之Sklearn实现电力预测">
 <meta property="og:url" content="http://yoursite.com/2017/11/07/机器学习/回归分析之Sklearn实现电力预测/index.html">
 <meta property="og:site_name" content="Thinkgamer的博客">
 <meta property="og:description" content="参考原文：http://www.cnblogs.com/pinard/p/6016029.html这里进行了手动实现，增强记忆。">
 <meta property="og:image" content="http://img.blog.csdn.net/20171107133222238?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvR2FtZXJfZ3l0/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
-<meta property="og:updated_time" content="2017-11-11T09:49:27.000Z">
+<meta property="og:updated_time" content="2017-11-12T17:16:01.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="回归分析之Sklearn实现电力预测">
 <meta name="twitter:description" content="参考原文：http://www.cnblogs.com/pinard/p/6016029.html这里进行了手动实现，增强记忆。">
@@ -63,11 +63,11 @@
 			
 				<li><a href="/">主页</a></li>
 	        
-				<li><a href="/categories/技术篇">技术 - 篇</a></li>
+				<li><a href="/categories/技术篇/">技术 - 篇</a></li>
 	        
-				<li><a href="/categories/随手记">随手 - 记</a></li>
+				<li><a href="/categories/随手记/">随手 - 记</a></li>
 	        
-				<li><a href="/categories/夏未眠">夏未眠</a></li>
+				<li><a href="/categories/夏未眠/">夏未眠</a></li>
 	        
 			</ul>
 		</nav>
@@ -157,11 +157,11 @@
 				
 					<li style="width: 25%"><a href="/">主页</a></li>
 		        
-					<li style="width: 25%"><a href="/categories/技术篇">技术 - 篇</a></li>
+					<li style="width: 25%"><a href="/categories/技术篇/">技术 - 篇</a></li>
 		        
-					<li style="width: 25%"><a href="/categories/随手记">随手 - 记</a></li>
+					<li style="width: 25%"><a href="/categories/随手记/">随手 - 记</a></li>
 		        
-					<li style="width: 25%"><a href="/categories/夏未眠">夏未眠</a></li>
+					<li style="width: 25%"><a href="/categories/夏未眠/">夏未眠</a></li>
 		        
 				</ul>
 			</nav>
@@ -287,14 +287,6 @@ PE = 447.06297099 - 1.97376045*AT - 0.23229086*V + 0.0693515*AP -0.15806957*RH</
         		<li class="article-tag-list-item">
         			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">sklearn</a>
         		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">pandas</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">交叉验证</a>
-        		</li>
       		
 		</ul>
 	</div>
@@ -374,6 +366,15 @@ PE = 447.06297099 - 1.97376045*AT - 0.23229086*V + 0.0693515*AP -0.15806957*RH</
   
 <nav id="article-nav">
   
+    <a href="/2017/11/13/数据结构/数据结构算法之二叉树/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          数据结构算法之二叉树
+        
+      </div>
+    </a>
+  
   
     <a href="/2017/09/29/机器学习/回归分析之线性回归（N元线性回归）/" id="article-nav-older" class="article-nav-link-wrap">
       <div class="article-nav-title">回归分析之线性回归（N元线性回归）</div>
@@ -422,7 +423,7 @@ PE = 447.06297099 - 1.97376045*AT - 0.23229086*V + 0.0693515*AP -0.15806957*RH</
     		&copy; 2017 Thinkgamer
     	</div>
       	<div class="footer-right">
-      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      		<a href="http://blog.csdn.net/gamer_gyt" target="_blank">Blog</a>  Published By <a href="https://github.com/Thinkgamer" target="_blank">Thinkgamer</a>  
       	</div>
     </div>
   </div>
@@ -523,23 +524,15 @@ MathJax.Hub.Queue(function() {
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">数据结构</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">夏未眠</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">青春</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">数据挖掘</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">相似度计算</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">python</a>
+                <a href="javascript:void(0)" class="js-tag color5">距离计算</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -551,27 +544,7 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">pandas</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">交叉验证</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">正态分布</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">T检验</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">二元线性回归</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">多元线性回归</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -579,15 +552,7 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">总结</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">周星驰</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">大话西游</a>
+                <a href="javascript:void(0)" class="js-tag color4">随手记</a>
               </li>
             
             <div class="clearfix"></div>
