@@ -4,7 +4,7 @@ date: 2017-12-14 17:55:29
 tags: [hexo]
 categories: 随手记
 ---
-参考：http://maker997.com/2017/07/01/hexo-Yilia-%E4%B8%BB%E9%A2%98%E5%A6%82%E4%BD%95%E6%B7%BB%E5%8A%A0%E7%9B%B8%E5%86%8C%E5%8A%9F%E8%83%BD/
+参考：[点击查看](http://maker997.com/2017/07/01/hexo-Yilia-%E4%B8%BB%E9%A2%98%E5%A6%82%E4%BD%95%E6%B7%BB%E5%8A%A0%E7%9B%B8%E5%86%8C%E5%8A%9F%E8%83%BD)
 
 但是其中有一些小问题，自己便重新整理了一下（本文适用于使用github存放照片）
 
