@@ -6,18 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Thinkgamer的博客</title>
+  <title>梯度算法之批量梯度下降，随机梯度下降和小批量梯度下降 | Thinkgamer的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="沈阳航空航天大学计算机院系，就职于北京万维星辰科技有限公司，主要研究数据挖掘，机器学习，云计算。">
-<meta name="keywords" content="Python,Django,爬虫,Hadoop,Maching Learning,数据挖掘,机器学习,云计算,大数据,深度学习,开发者,程序猿,程序媛,极客,编程,代码,开源,IT网站,Developer,Programmer,Coder,用户体验">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Thinkgamer的博客">
-<meta property="og:url" content="http://yoursite.com/page/2/index.html">
+  <meta name="description" content="在机器学习领域，体梯度下降算法分为三种  批量梯度下降算法（BGD，Batch gradient descent algorithm） 随机梯度下降算法（SGD，Stochastic gradient descent algorithm） 小批量梯度下降算法（MBGD，Mini-batch gradient descent algorithm）">
+<meta name="keywords" content="梯度下降">
+<meta property="og:type" content="article">
+<meta property="og:title" content="梯度算法之批量梯度下降，随机梯度下降和小批量梯度下降">
+<meta property="og:url" content="http://yoursite.com/2017/12/14/机器学习/梯度算法之批量梯度下降，随机梯度下降和小批量梯度下降/index.html">
 <meta property="og:site_name" content="Thinkgamer的博客">
-<meta property="og:description" content="沈阳航空航天大学计算机院系，就职于北京万维星辰科技有限公司，主要研究数据挖掘，机器学习，云计算。">
+<meta property="og:description" content="在机器学习领域，体梯度下降算法分为三种  批量梯度下降算法（BGD，Batch gradient descent algorithm） 随机梯度下降算法（SGD，Stochastic gradient descent algorithm） 小批量梯度下降算法（MBGD，Mini-batch gradient descent algorithm）">
+<meta property="og:updated_time" content="2017-12-14T06:41:32.921Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Thinkgamer的博客">
-<meta name="twitter:description" content="沈阳航空航天大学计算机院系，就职于北京万维星辰科技有限公司，主要研究数据挖掘，机器学习，云计算。">
+<meta name="twitter:title" content="梯度算法之批量梯度下降，随机梯度下降和小批量梯度下降">
+<meta name="twitter:description" content="在机器学习领域，体梯度下降算法分为三种  批量梯度下降算法（BGD，Batch gradient descent algorithm） 随机梯度下降算法（SGD，Stochastic gradient descent algorithm） 小批量梯度下降算法（MBGD，Mini-batch gradient descent algorithm）">
   
   
     <link rel="icon" href="/assets/img/favicon.ico">
@@ -171,41 +172,96 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-    <article id="post-机器学习/几种距离计算公式在数据挖掘中的应用场景分析" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-机器学习/梯度算法之批量梯度下降，随机梯度下降和小批量梯度下降" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/09/20/机器学习/几种距离计算公式在数据挖掘中的应用场景分析/">几种距离计算公式在数据挖掘中的应用场景分析</a>
+    <h1 class="article-title" itemprop="name">
+      梯度算法之批量梯度下降，随机梯度下降和小批量梯度下降
     </h1>
   
 
         
-        <a href="/2017/09/20/机器学习/几种距离计算公式在数据挖掘中的应用场景分析/" class="archive-article-date">
-  	<time datetime="2017-09-20T02:23:39.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-20</time>
+        <a href="/2017/12/14/机器学习/梯度算法之批量梯度下降，随机梯度下降和小批量梯度下降/" class="archive-article-date">
+  	<time datetime="2017-12-14T06:40:43.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-14</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>本文涉及以下几种距离计算公式的分析，参考资料为《面向程序员的数据挖掘指南》</p>
+        <p>在机器学习领域，体梯度下降算法分为三种</p>
 <ul>
-<li>曼哈顿距离</li>
-<li>欧几里得距离</li>
-<li>闵可夫斯基距离</li>
-<li>皮尔逊相关系数</li>
-<li>余弦相似度</li>
+<li>批量梯度下降算法（BGD，Batch gradient descent algorithm）</li>
+<li>随机梯度下降算法（SGD，Stochastic gradient descent algorithm）</li>
+<li>小批量梯度下降算法（MBGD，Mini-batch gradient descent algorithm）</li>
 </ul>
-        
-          <a class="article-more-a" href="/2017/09/20/机器学习/几种距离计算公式在数据挖掘中的应用场景分析/#more">More >></a>
-        
+<a id="more"></a>
+<h1 id="批量梯度下降算法"><a href="#批量梯度下降算法" class="headerlink" title="批量梯度下降算法"></a>批量梯度下降算法</h1><p>BGD是最原始的梯度下降算法，每一次迭代使用全部的样本，即权重的迭代公式中(公式中用$\theta$代替$\theta_i$)，</p>
+<script type="math/tex; mode=display">
+\jmath (\theta _0,\theta _1,...,\theta _n)=\sum_{i=0}^{m}( h_\theta(x_0,x_1,...,x_n)-y_i )^2</script><script type="math/tex; mode=display">
+\theta _i = \theta _i - \alpha \frac{\partial \jmath (\theta _1,\theta _2,...,\theta _n)}{\partial \theta _i}</script><script type="math/tex; mode=display">
+公式(1)</script><p>这里的m代表所有的样本，表示从第一个样本遍历到最后一个样本。</p>
+<p>特点：</p>
+<ul>
+<li>能达到全局最优解，易于并行实现</li>
+<li>当样本数目很多时，训练过程缓慢</li>
+</ul>
+<h1 id="随机梯度下降算法"><a href="#随机梯度下降算法" class="headerlink" title="随机梯度下降算法"></a>随机梯度下降算法</h1><p>SGD的思想是更新每一个参数时都使用一个样本来进行更新，即公式（1）中m为1。每次更新参数都只使用一个样本，进行多次更新。这样在样本量很大的情况下，可能只用到其中的一部分样本就能得到最优解了。<br>但是，SGD伴随的一个问题是噪音较BGD要多，使得SGD并不是每次迭代都向着整体最优化方向。</p>
+<p>特点：</p>
+<ul>
+<li>训练速度快</li>
+<li>准确度下降，并不是最优解，不易于并行实现</li>
+</ul>
+<h1 id="小批量梯度下降算法"><a href="#小批量梯度下降算法" class="headerlink" title="小批量梯度下降算法"></a>小批量梯度下降算法</h1><p>MBGD的算法思想就是在更新每一参数时都使用一部分样本来进行更新，也就是公式（1）中的m的值大于1小于所有样本的数量。</p>
+<p>相对于随机梯度下降，Mini-batch梯度下降降低了收敛波动性，即降低了参数更新的方差，使得更新更加稳定。相对于批量梯度下降，其提高了每次学习的速度。并且其不用担心内存瓶颈从而可以利用矩阵运算进行高效计算。一般而言每次更新随机选择[50,256]个样本进行学习，但是也要根据具体问题而选择，实践中可以进行多次试验，选择一个更新速度与更次次数都较适合的样本数。mini-batch梯度下降可以保证收敛性，常用于神经网络中。</p>
+<h1 id="补充"><a href="#补充" class="headerlink" title="补充"></a>补充</h1><p>在样本量较小的情况下，可以使用批量梯度下降算法，样本量较大的情况或者线上，可以使用随机梯度下降算法或者小批量梯度下降算法。</p>
+<p>在机器学习中的无约束优化算法，除了梯度下降以外，还有前面提到的最小二乘法，此外还有牛顿法和拟牛顿法。</p>
+<p>梯度下降法和最小二乘法相比，梯度下降法需要选择步长，而最小二乘法不需要。梯度下降法是迭代求解，最小二乘法是计算解析解。如果样本量不算很大，且存在解析解，最小二乘法比起梯度下降法要有优势，计算速度很快。但是如果样本量很大，用最小二乘法由于需要求一个超级大的逆矩阵，这时就很难或者很慢才能求解解析解了，使用迭代的梯度下降法比较有优势。</p>
+<p>梯度下降法和牛顿法/拟牛顿法相比，两者都是迭代求解，不过梯度下降法是梯度求解，而牛顿法/拟牛顿法是用二阶的海森矩阵的逆矩阵或伪逆矩阵求解。相对而言，使用牛顿法/拟牛顿法收敛更快。但是每次迭代的时间比梯度下降法长。</p>
+<h1 id="sklearn中的SGD"><a href="#sklearn中的SGD" class="headerlink" title="sklearn中的SGD"></a>sklearn中的SGD</h1><p>sklearn官网上查了一下，并没有找到BGD和MBGD的相关文档，只是看到可SGD的，感兴趣的可以直接去官网看英文文档，点击SGD查看：<a href="http://scikit-learn.org/stable/modules/generated/sklearn.linear_model.SGDClassifier.html" target="_blank" rel="external">SGD</a>，这也有一个中文的 <a href="http://sklearn.lzjqsdd.com/modules/sgd.html" target="_blank" rel="external">SGD</a></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">In [1]: from sklearn.linear_model import SGDClassifier</span><br><span class="line"></span><br><span class="line">In [2]: X = [[0., 0.], [1., 1.]]</span><br><span class="line"></span><br><span class="line">In [3]: y = [0, 1]</span><br><span class="line"></span><br><span class="line">In [4]: clf = SGDClassifier(loss=&quot;hinge&quot;, penalty=&quot;l2&quot;)</span><br><span class="line"></span><br><span class="line">In [5]: clf.fit(X, y)</span><br><span class="line">Out[5]: </span><br><span class="line">SGDClassifier(alpha=0.0001, average=False, class_weight=None, epsilon=0.1,</span><br><span class="line">       eta0=0.0, fit_intercept=True, l1_ratio=0.15,</span><br><span class="line">       learning_rate=&apos;optimal&apos;, loss=&apos;hinge&apos;, n_iter=5, n_jobs=1,</span><br><span class="line">       penalty=&apos;l2&apos;, power_t=0.5, random_state=None, shuffle=True,</span><br><span class="line">       verbose=0, warm_start=False)</span><br><span class="line"></span><br><span class="line">In [6]:  clf.predict([[2., 2.]])</span><br><span class="line">Out[6]: array([1])</span><br><span class="line"></span><br><span class="line">In [7]: clf.coef_ </span><br><span class="line">Out[7]: array([[ 9.91080278,  9.91080278]])</span><br><span class="line"></span><br><span class="line">In [8]: clf.intercept_ </span><br><span class="line">Out[8]: array([-9.97004991])</span><br></pre></td></tr></table></figure>
+<p>参考：</p>
+<ul>
+<li><a href="https://www.cnblogs.com/pinard/p/5970503.html" target="_blank" rel="external">https://www.cnblogs.com/pinard/p/5970503.html</a></li>
+<li><a href="http://blog.csdn.net/uestc_c2_403/article/details/74910107" target="_blank" rel="external">http://blog.csdn.net/uestc_c2_403/article/details/74910107</a></li>
+</ul>
+
       
 
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/img/zhifubao.jpeg">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/img/weixin.jpeg">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
       
     </div>
     <div class="article-info article-info-index">
@@ -216,7 +272,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">距离计算</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">梯度下降</a>
         		</li>
       		
 		</ul>
@@ -236,16 +292,75 @@
 
 
       
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/09/20/机器学习/几种距离计算公式在数据挖掘中的应用场景分析/">展开全文 >></a>
-        </p>
-      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2017/12/14/机器学习/梯度算法之批量梯度下降，随机梯度下降和小批量梯度下降/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+  
+    <a href="/2017/12/14/机器学习/梯度算法之梯度上升和梯度下降/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">梯度算法之梯度上升和梯度下降</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -265,641 +380,16 @@
 
 
 
-
-
-  
-    <article id="post-机器学习/回归分析之理论篇" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/09/17/机器学习/回归分析之理论篇/">回归分析之理论篇</a>
-    </h1>
-  
-
-        
-        <a href="/2017/09/17/机器学习/回归分析之理论篇/" class="archive-article-date">
-  	<time datetime="2017-09-17T00:10:27.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-17</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>2015年的机器学习博客其实都是看《机器学习实战》这本书时学到的，说实话当时也是知其然，不知其所以然，以至于对其理解不深刻，好多细节和理论知识都搞的是乱七八糟，自从工作之后再去看一个算法，思考的比之前多了点，查看资料也比之前多了点，生怕理解错误，影响其他人，当然在理解的程度上还是不够深刻，这也是一个学习的过程吧，记录一下，欢迎指正。</p>
-<p>CSDN链接：<a href="http://blog.csdn.net/gamer_gyt/article/details/78008144" target="_blank" rel="external">点击阅读</a><br>
-        
-          <a class="article-more-a" href="/2017/09/17/机器学习/回归分析之理论篇/#more">More >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">回归分析</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">正态分布</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/技术篇//" class="article-tag-list-link color4">技术篇</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/09/17/机器学习/回归分析之理论篇/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-
-  
-    <article id="post-机器学习/数据归一化和其在sklearn中的处理" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/09/01/机器学习/数据归一化和其在sklearn中的处理/">数据归一化和其在sklearn中的处理</a>
-    </h1>
-  
-
-        
-        <a href="/2017/09/01/机器学习/数据归一化和其在sklearn中的处理/" class="archive-article-date">
-  	<time datetime="2017-09-01T03:33:50.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-01</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="一：数据归一化"><a href="#一：数据归一化" class="headerlink" title="一：数据归一化"></a>一：数据归一化</h1><p>数据归一化（标准化）处理是数据挖掘的一项基础工作，不同评价指标往往具有不同的量纲和量纲单位，这样的情况会影响到数据分析的结果，为了消除指标之间的量纲影响，需要进行数据标准化处理，以解决数据指标之间的可比性。原始数据经过数据标准化处理后，各指标处于同一数量级，适合进行综合对比评价。<br>
-        
-          <a class="article-more-a" href="/2017/09/01/机器学习/数据归一化和其在sklearn中的处理/#more">More >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">sklearn</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">数据归一化</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/技术篇//" class="article-tag-list-link color4">技术篇</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/09/01/机器学习/数据归一化和其在sklearn中的处理/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-
-  
-    <article id="post-机器学习/MachingLearning中的距离和相似性计算以及python实现" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/07/16/机器学习/MachingLearning中的距离和相似性计算以及python实现/">MachingLearning中的距离和相似性计算以及python实现</a>
-    </h1>
-  
-
-        
-        <a href="/2017/07/16/机器学习/MachingLearning中的距离和相似性计算以及python实现/" class="archive-article-date">
-  	<time datetime="2017-07-16T04:14:43.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-07-16</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>写这篇文章的目的不是说摘抄网上其他人的总结，刚才最近在看这方面的东西，为了让自己能够实际的去感受下每种求距离公式的差别，然后用python进行具体实现。<br>
-        
-          <a class="article-more-a" href="/2017/07/16/机器学习/MachingLearning中的距离和相似性计算以及python实现/#more">More >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">距离计算</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/技术篇//" class="article-tag-list-link color4">技术篇</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/07/16/机器学习/MachingLearning中的距离和相似性计算以及python实现/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-
-  
-    <article id="post-随手记/一切的闹闹哄哄，只是他在水帘洞躲避风沙那晚做的一个梦" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/04/16/随手记/一切的闹闹哄哄，只是他在水帘洞躲避风沙那晚做的一个梦/">一切的闹闹哄哄，只是他在水帘洞躲避风沙那晚做的一个梦</a>
-    </h1>
-  
-
-        
-        <a href="/2017/04/16/随手记/一切的闹闹哄哄，只是他在水帘洞躲避风沙那晚做的一个梦/" class="archive-article-date">
-  	<time datetime="2017-04-15T17:03:56.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-04-16</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <blockquote>
-<p>送同学走之后，我在路边默默的站了有五分钟，突然觉得我无处可去，有一种深入骨髓的悲哀和无奈，然后我就想起了一个命题，“如今的你，何去何从！”我不知道为什么会突然想到这样一个命题，或许是我们每个人都是至尊宝吧。其实每个人对《大话》的理解都是有所不同的，同样的人在不同的时期认识也会有偏差，就好比我第一次看的时候，笑得腹背抽筋，呲牙咧嘴，第二次看的时候，笑得少了，想的多了，过后便什么感觉也没有了，第三次看得时候，忽然觉得不知道是该哭还是该笑，笑得时候太牵强，哭得时候太尴尬。第四次便是这一次，看完之后觉得有一种无可奈何的悲哀。</p>
-</blockquote>
-        
-          <a class="article-more-a" href="/2017/04/16/随手记/一切的闹闹哄哄，只是他在水帘洞躲避风沙那晚做的一个梦/#more">More >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">随手记</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/随手记//" class="article-tag-list-link color4">随手记</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/04/16/随手记/一切的闹闹哄哄，只是他在水帘洞躲避风沙那晚做的一个梦/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-
-  
-    <article id="post-随手记/别了青春与流年，遇见下一个自己" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/12/21/随手记/别了青春与流年，遇见下一个自己/">别了青春与流年，遇见下一个自己</a>
-    </h1>
-  
-
-        
-        <a href="/2016/12/21/随手记/别了青春与流年，遇见下一个自己/" class="archive-article-date">
-  	<time datetime="2016-12-20T16:35:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-12-21</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <font size="3">如果说岁月是年轮，我们便是推行者，如果说成长是一场华丽的蜕变，我们便是领舞者。一路走来，太多不易，告别青春的年少轻狂，我们成了岁月里被磨平的棱角，静静的守在属于自己的一亩三分地。</font>
-        
-          <a class="article-more-a" href="/2016/12/21/随手记/别了青春与流年，遇见下一个自己/#more">More >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">随手记</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/随手记//" class="article-tag-list-link color4">随手记</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2016/12/21/随手记/别了青春与流年，遇见下一个自己/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-
-  
-    <article id="post-夏未眠/这夏未眠-简介" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/09/15/夏未眠/这夏未眠-简介/">这夏未眠.简介</a>
-    </h1>
-  
-
-        
-        <a href="/2016/09/15/夏未眠/这夏未眠-简介/" class="archive-article-date">
-  	<time datetime="2016-09-15T10:13:50.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-09-15</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>书整体分为三部分《夏之过往》，《夏之流年》，《夏之未至》。整本书讲的是男主人公顾艾哲（小艾）与莫晨（晨晨）之间的故事，从初中到高中再到大学，从相遇到相知再到相离。<br>
-        
-          <a class="article-more-a" href="/2016/09/15/夏未眠/这夏未眠-简介/#more">More >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">夏未眠</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/夏未眠//" class="article-tag-list-link color4">夏未眠</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2016/09/15/夏未眠/这夏未眠-简介/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-
-  
-    <article id="post-夏未眠/这夏未眠-序" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/09/15/夏未眠/这夏未眠-序/">这夏未眠.序</a>
-    </h1>
-  
-
-        
-        <a href="/2016/09/15/夏未眠/这夏未眠-序/" class="archive-article-date">
-  	<time datetime="2016-09-15T10:08:51.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-09-15</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>这本书的整体构思是小主大学一年级时刚去的时候的一个想法，当时刚刚步入大学的我们，心里是那么的迷茫与懵懂，开学前两周，除了军训还是军训，晚上偶尔有个空闲时间，我想大概也许是无聊的，记得那个时候坐在图书馆靠窗的位置，看着窗外，没有明月，没有佳人，有的只是一望无际的黑暗。<br>
-        
-          <a class="article-more-a" href="/2016/09/15/夏未眠/这夏未眠-序/#more">More >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">夏未眠</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/夏未眠//" class="article-tag-list-link color4">夏未眠</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2016/09/15/夏未眠/这夏未眠-序/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-
   
   
-    <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
-    </nav>
   
+
+  
+
+  
+
+  
+
 
 
           </div>
@@ -928,8 +418,8 @@
     <script>
 	var yiliaConfig = {
 		mathjax: true,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
