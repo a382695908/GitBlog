@@ -116,8 +116,8 @@
         var data = res.list[j].arr;
         var liTmpl = "";
         for (var i = 0, len = data.link.length; i < len; i++) {
-          var minSrc = 'https://github.com/Thinkgamer/GitBlog/blob/master/min_photos/' + data.link[i] + '.min.jpg';
-          var src = 'https://github.com/Thinkgamer/GitBlog/blob/master/photos/' + data.link[i];
+          var minSrc = 'https://raw.githubusercontent.com/Thinkgamer/GitBlog/master/min_photos/' + data.link[i] + '.min.jpg';
+          var src = 'https://raw.githubusercontent.com/Thinkgamer/GitBlog/master/photos/' + data.link[i];
           var type = data.type[i];
           var target = src + (type === 'video' ? '.mp4' : '.jpg');
           src += '.jpg';
@@ -169,7 +169,7 @@
     function loadData(success) {
       if (!searchData) {
         var xhr = new XMLHttpRequest();
-        xhr.open('GET', './ins.json?t=' + +new Date(), true);
+        xhr.open('GET', './data.json?t=' + +new Date(), true);
 
         xhr.onload = function() {
           if (this.status >= 200 && this.status < 300) {
