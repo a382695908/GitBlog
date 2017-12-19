@@ -81,7 +81,7 @@ theme: yilia
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: git@github.com:Thinkgamer/thinkgamer.github.io
+  repo: git@github.com:Thinkgamer/thinkgamer.github.io.git
   branch: master
 
 jsonContent:
